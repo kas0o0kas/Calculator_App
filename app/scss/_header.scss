@@ -1,0 +1,91 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 32px;
+    
+    &__logo {
+        &.theme1 {
+            color: $white;
+        }
+        &.theme2 {
+            color: $veryDarkGrayishYellow;
+        }
+        &.theme3 {
+            color: $lightYellow;
+        }
+        
+        font-size: 32px;
+    }
+
+    &__themeOption {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &.theme1 {
+            color: $white;
+        }
+        &.theme2 {
+            color: $veryDarkGrayishYellow;
+        }
+        &.theme3 {
+            color: $lightYellow;
+        }
+
+        .option__text {
+            font-size: 13px;
+            padding-right: 24px;
+            padding-bottom: 5px;
+            align-self: flex-end;
+        }
+
+        .option__level {
+            
+            .level__zahl {
+                padding-left: 10px;
+                padding-right: 10px;
+                span {
+                    font-size: 13px;
+                    cursor: pointer;
+                }
+
+                span:not(:last-child){
+                    margin-right: 14px;
+                }
+            }
+
+            .level__barToggle {
+                padding: 7px;
+                border-radius: 20px;
+                
+                &.theme1 {
+                    background-color: $veryDarkDesaturatedBlue2;
+                }
+                &.theme2 {
+                    background-color: $grayishRed;
+                }
+                &.theme3 {
+                    background-color: $veryDarkViolet2;
+                }
+
+                .toggle {
+
+                    &.theme1 {
+                        background-color: $red;
+                    }
+                    &.theme2 {
+                        background-color: $orange;
+                    }
+                    &.theme3 {
+                        background-color: $pureCyan;
+                    }
+
+                    width: 18px;
+                    height: 18px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

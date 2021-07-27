@@ -1,0 +1,141 @@
+.keypad {
+
+    &.theme1 {
+        background-color: $veryDarkDesaturatedBlue2;
+    }
+    &.theme2 {
+        background-color: $grayishRed;
+    }
+    &.theme3 {
+        background-color: $veryDarkViolet2;
+    }
+    
+    padding: 24px;
+
+    @include breakpoint_up(large){
+        padding-left: 30px;
+        padding-top: 34px;
+        padding-right: 30px;
+        padding-bottom: 34px;
+    }
+
+    &__1 {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(4,1fr);
+        row-gap: 17px;
+        column-gap: 13px;
+        margin-bottom: 17px;
+        justify-items: stretch;
+
+        @include breakpoint_up(large){
+            row-gap: 28px;
+            column-gap: 26px;
+            margin-bottom: 28px;    
+        }
+
+        .key__delete {
+            font-size: 16px;
+
+            &.theme1 {
+                color: $white;
+                background-color: $desaturatedDarkBlue1;
+                box-shadow: 0px 4px 2px $desaturatedDarkBlue2;
+            }
+            &.theme2 {
+                color: $white;
+                background-color: $darkModerateCyan;
+                box-shadow: 0px 4px 2px $veryDarkCyan;
+            }
+            &.theme3 {
+                color: $white;
+                background-color: $darkViolet;
+                box-shadow: 0px 4px 2px $vividMagenta;
+            }
+        } 
+    }
+
+    &__2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 13px;
+        justify-items: stretch;
+
+        @include breakpoint_up(large){
+            row-gap: 28px;
+            column-gap: 26px;
+        }
+
+        .key__reset {
+            font-size: 16px;
+
+            &.theme1 {
+                color: $white;
+                background-color: $desaturatedDarkBlue1;
+                box-shadow: 0px 4px 2px $desaturatedDarkBlue2;
+            }
+            &.theme2 {
+                color: $white;
+                background-color: $darkModerateCyan;
+                box-shadow: 0px 4px 2px $veryDarkCyan;
+            }
+            &.theme3 {
+                color: $white;
+                background-color: $darkViolet;
+                box-shadow: 0px 4px 2px $vividMagenta;
+            }
+        } 
+
+        .key__equal {
+            font-size: 16px;
+
+            &.theme1 {
+                color: $white;
+                background-color: $red;
+                box-shadow: 0px 4px 2px $darkRed;
+            }
+            &.theme2 {
+                color: $veryDarkBlue;
+                background-color: $orange;
+                box-shadow: 0px 4px 2px $darkOrange;
+            }
+            &.theme3 {
+                color: $veryDarkBlue;
+                background-color: $pureCyan;
+                box-shadow: 0px 4px 2px $softCyan;
+            }
+        } 
+    }
+    
+    button {
+        height: 60px;
+        text-align: center;
+        font-size: 24px;
+        font-family: 'Spartan', sans-serif;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        border-radius: 5px;
+
+        &.theme1 {
+            background-color: $lightGrayishOrange;
+            box-shadow: 0px 4px 2px $darkGrayishOrange;
+            color: $veryDarkGrayishBlue;
+        }
+        &.theme2 {
+            background-color: $lightGrayishYellow;
+            box-shadow: 0px 4px 2px $grayishOrange;
+            color: $veryDarkGrayishYellow;
+        }
+        &.theme3 {
+            background-color: $veryDarkViolet;
+            box-shadow: 0px 4px 2px $darkMagenta;
+            color: $lightYellow;
+        }
+
+        &:active {
+            transform: translateY(4px);
+        }
+
+    }
+}

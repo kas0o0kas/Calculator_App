@@ -1,0 +1,74 @@
+//Colors
+    //Theme 1
+
+        //Backgrounds colours theme 1
+
+        $veryDarkDesaturatedBlue1 : hsl(222, 26%, 31%); //(main background)
+        $veryDarkDesaturatedBlue2 : hsl(223, 31%, 20%); //(toggle background, keypad background)
+        $veryDarkDesaturatedBlue3 : hsl(224, 36%, 15%); //(screen background)
+
+        // Keys colours theme 1
+
+        $desaturatedDarkBlue1 : hsl(225, 21%, 49%); //(key background)
+        $desaturatedDarkBlue2 : hsl(224, 28%, 35%); //(key shadow)
+
+        $red : hsl(6, 63%, 50%); //(key background, toggle)
+        $darkRed : hsl(6, 70%, 34%); //(key shadow)
+
+        $lightGrayishOrange : hsl(30, 25%, 89%); //(key background)
+        $grayishOrange : hsl(28, 16%, 65%); //(key shadow)
+
+        //Text colours theme 1
+
+        $veryDarkGrayishBlue: hsl(221, 14%, 31%);
+        $white: hsl(0, 0, 100%);
+
+
+    //Theme 2
+
+        //Backgrounds colours theme 2
+
+        $lightGray : hsl(0, 0%, 90%); //(main background)
+        $grayishRed : hsl(0, 5%, 81%); //(toggle background, keypad background)
+        $veryLightGray : hsl(0, 0%, 93%); //(screen background)
+
+        //Keys colours theme 2
+
+        $darkModerateCyan : hsl(185, 42%, 37%); //(key background)
+        $veryDarkCyan : hsl(185, 58%, 25%); //(key shadow)
+
+        $orange : hsl(25, 98%, 40%); //(key background, toggle)
+        $darkOrange : hsl(25, 99%, 27%); //(key shadow)
+
+        $lightGrayishYellow : hsl(45, 7%, 89%); //(key background)
+        $darkGrayishOrange : hsl(35, 11%, 61%); //(key shadow)
+
+        //Text colours theme 2
+
+        $veryDarkGrayishYellow: hsl(60, 10%, 19%);
+        $white : hsl(0, 0, 100%); //(text)
+
+
+    //Theme 3
+
+        //Backgrounds colours theme 3
+
+        $veryDarkViolet1 : hsl(268, 75%, 9%); //(main background)
+        $veryDarkViolet2 : hsl(268, 71%, 12%); //(toggle background, keypad background, screen background)
+
+        //Keys colours theme 3
+
+        $darkViolet : hsl(281, 89%, 26%); //(key background)
+        $vividMagenta : hsl(285, 91%, 52%); //(key shadow)
+
+        $pureCyan : hsl(176, 100%, 44%); //(key background, toggle)
+        $softCyan : hsl(177, 92%, 70%); //(key shadow)
+
+        $veryDarkViolet : hsl(268, 47%, 21%); //(key background)
+        $darkMagenta : hsl(290, 70%, 36%); //(key shadow)
+
+        //Text colours theme 3
+
+        $lightYellow: hsl(52, 100%, 62%); 
+        $veryDarkBlue: hsl(198, 20%, 13%);
+        $white : hsl(0, 0, 100%); //(text)

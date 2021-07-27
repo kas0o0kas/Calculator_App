@@ -1,0 +1,16 @@
+//breakpoint for mobile:640px tablet 1024px and desktop 1400px
+$breakpoint_up: ('medium': '640px', 'large': '1024px', 'xlarge': '1400px');
+$breakpoint_down: ('small': '640px', 'medium': '1024px', 'large': '1400px');
+
+//mixins
+@mixin breakpoint_up($size){
+    @media (min-width:map-get($breakpoint_up, $size)){
+        @content;
+    }
+}
+
+@mixin breakpoint_down($size){
+    @media (max-width: map-get($breakpoint_down, $size)){
+        @content;
+    }
+}

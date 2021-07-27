@@ -1,0 +1,40 @@
+.screen {
+    margin-bottom: 24px;
+
+    &__output {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 85%;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        text-align: right;
+        font-size: 30px;
+        font-family: 'Spartan', sans-serif;
+        padding: 26px;
+        border-radius: 10px;
+
+        &.theme1 {
+            color: $white;
+            background-color: $veryDarkDesaturatedBlue3;
+        }
+        &.theme2 {
+            color: $veryDarkGrayishYellow;
+            background-color: $veryLightGray;
+        }
+        &.theme3 {
+            color: $lightYellow;
+            background-color: $veryDarkViolet2;
+        }
+
+        @include breakpoint_up(large){
+            font-size: 50px;
+            padding-left: 36px;
+            padding-top: 40px;
+            padding-right: 36px;
+            padding-bottom: 40px;
+        }
+    }
+    
+}

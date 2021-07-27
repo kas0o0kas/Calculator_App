@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./app/scss/style.css">
+  
+  <script type="text/javascript" src="/app/js/jquery-3.6.0.js"></script>
+
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); font-size: 16px; text-decoration: none;}
+    .attribution a.coder { color: red; font-size: 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header__logo">calc</div>
+      <div class="header__themeOption">
+        <div class="option__text">THEME</div>
+        <div class="option__level">
+          <div class="level__zahl">
+            <span class="theme__level level1">1</span>
+            <span class="theme__level level2">2</span>
+            <span class="theme__level level3">3</span>
+          </div>
+
+          <div class="level__barToggle">
+            <div class="toggle"></div>
+          </div>
+          
+        </div>
+
+      </div>
+    </header>
+
+    <section class="screen">
+      <input type="text" class="screen__output" value="0">
+    </section>
+
+    <section class="keypad">
+      <div class="keypad__1">
+        <button class = "key__7 zahl" value = "7">7</button>
+        <button class = "key__8 zahl" value = "8">8</button>
+        <button class = "key__9 zahl" value = "9">9</button>
+        <button class = "key__delete">DEL</button>
+        <button class = "key__4 zahl" value = "4">4</button>
+        <button class = "key__5 zahl" value = "5">5</button>
+        <button class = "key__6 zahl" value = "6">6</button>
+        <button class = "key__plus calculate" value="+">+</button>
+        <button class = "key__1 zahl" value = "1">1</button>
+        <button class = "key__2 zahl" value = "2">2</button>
+        <button class = "key__3 zahl" value = "3">3</button>
+        <button class = "key__minus calculate"  value="-">-</button>
+        <button class = "key__komma zahl" value = ".">.</button>
+        <button class = "key__0 zahl" value="0">0</button>
+        <button class = "key__divine calculate" value="/">/</button>
+        <button class = "key__multi calculate" value="x">x</button>
+      </div>
+      <div class="keypad__2">
+        <button class = "key__reset">RESET</button>
+        <button class = "key__equal">=</button>
+      </div>
+      
+    </section>
+  </div>
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a class="coder" href="#">Monkie_J</a>.
+  </div>
+
+  <script type="text/javascript" src="./app/js/app.js"></script>
+</body>
+</html>
